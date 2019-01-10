@@ -28,6 +28,10 @@ def main():
     ax2 = ax1.twinx()
     ax2.set_ylabel('Temperature[degree]', color=COLOR_RED)
 
+    formatter = matplotlib.ticker.ScalarFormatter(useOffset=False)
+    ax1.yaxis.set_major_formatter(formatter)
+    ax2.yaxis.set_major_formatter(formatter)
+
     pressList = []
     tempList = []
     timeList = []

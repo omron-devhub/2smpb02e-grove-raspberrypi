@@ -173,7 +173,7 @@ class Grove2smpd02e:
         bp3 = -(bp3 & 0b1000000000000000) | (bp3 & 0b0111111111111111)
         bp3 = self.conv_K0(bp3, 1.3e-16, 7.9e-17)
  
-        Pr = b00 + Tr * (bt1 + b11 * bp1 + bt2 * Tr) + Dp * (bp1 + b12 * Tr * Tr + Dp * (bp2 + b21 * Tr + bp3 * Dp)) 
+        Pr = b00 + bt1 * Tr + bp1 * Dp + b11 * Dp * Tr + bt2 * pow(Tr,2) + bp2 * pow(Dp,2) + b12 * Dp * pow(Tr,2) + b21 * pow(Dp,2) * Tr + bp3 * pow(Dp,3)
  
         press = Pr / 100.0
         temp = Tr / 256.0
