@@ -65,7 +65,7 @@ def main():
         plt.show()
 
         print(datetime.datetime.today().strftime("[%Y/%m/%d %H:%M:%S]")
-                        ,"pressure=%.1f[hPa] temperature=%.1f[℃]" %(press,temp))
+                        ,"pressure=%.1f[hPa] temperature=%.1f[degC]" %(press,temp))
 
 if __name__ == '__main__':
   main()
