@@ -30,6 +30,7 @@ When you run sample_gui_2smpb_02e.py, you can see the following graph.
 2. Open Terminal and execute the following command.    
     ```
     $ mkdir omron_sensor
+    $ cd omron_sensor
     $ git clone https://github.com/omron-devhub/2smpb02e-grove-raspberrypi.git
     ```
 

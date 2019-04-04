@@ -30,6 +30,7 @@ sample_gui_2smpb_02e.py を実行すると以下のようなグラフを確認�
 2. ターミナルを開き、次のコマンドを実行します。  
     ```
     $ mkdir omron_sensor
+    $ cd omron_sensor
     $ git clone https://github.com/omron-devhub/2smpb02e-grove-raspberrypi.git
     ```
 
